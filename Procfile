@@ -1,0 +1,1 @@
+web: qunicorn pizzashopproject.wsgi --log-file -

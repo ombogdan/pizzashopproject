@@ -1,0 +1,20 @@
+{% extends 'pizzashop/base.html' %}
+{% load bootstrap4 %}
+{% block page %}
+<div class="offset-lg-4 col-lg-8">
+    <div class="panel">
+        <div class="panel-heading bg-ruby">
+            <h4 class="panel-title text-center text-white">
+                Змінити піцу
+            </h4>
+        </div>
+        <div class="panel-body">
+            <form enctype="multipart/form-data" method="POST">
+                {% csrf_token %}
+                {% bootstrap_form form %}
+                <button class="btn btn-red" type="submit">Змінити</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

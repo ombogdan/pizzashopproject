@@ -1,0 +1,14 @@
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Головна сторінка</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
+    <static src="{% static 'js/bootstrap.min.js' %}"></static>
+</head>
+<body>
+<h2>Hello Pizzeria</h2>
+<a href="{% url 'pizzashop-sign-up' %}">Вихід</a>
+</body>
+</html>
