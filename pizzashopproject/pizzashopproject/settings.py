@@ -22,7 +22,7 @@ SECRET_KEY = 'e*1h_qgbd%2sb*m*ejl5p65a!^tyj5-c=(er^+_$(j6*g=s1qn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['damp-wildwood-39153.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -128,7 +128,14 @@ LOGIN_REDIRECT_URL = '/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+import dj_database_url
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
+
+
 MEDIA_URL = '/media/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 AUTHENTICATION_BACKENDS = (
     'social_core.backends.facebook.FacebookOAuth2',
