@@ -2,18 +2,17 @@ bootstrap4==0.1.0
 certifi==2019.3.9
 chardet==3.0.4
 defusedxml==0.5.0
-Django==2.1.5
+dj-database-url==0.5.0
+Django==2.1.7
+django-bootstrap4==0.0.8
 django-braces==1.13.0
 django-oauth-toolkit==1.2.0
 django-rest-framework-social-oauth2==1.1.0
 djangorestframework==3.9.2
-gunicorn==19.9.0
 idna==2.8
-oauth2-provider==0.0
 oauthlib==3.0.1
 Pillow==5.4.1
 PyJWT==1.7.1
-python-social-auth==0.3.6
 python3-openid==3.1.0
 pytz==2018.9
 requests==2.21.0
@@ -22,3 +21,5 @@ six==1.12.0
 social-auth-app-django==3.1.0
 social-auth-core==3.1.0
 urllib3==1.24.1
+view==0.1
+whitenoise==4.1.2
